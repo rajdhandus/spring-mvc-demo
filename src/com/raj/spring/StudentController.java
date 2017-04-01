@@ -25,7 +25,10 @@ public class StudentController {
 	
 	@RequestMapping("/processForm")
 	public String processForm(@ModelAttribute("student") Student theStudent){
-		System.out.println(theStudent.getFirstName() + " " + theStudent.getLastName() + " " + theStudent.getCountry());
+		System.out.println(theStudent.getFirstName() + " " + 
+						   theStudent.getLastName() + " " + 
+						   theStudent.getCountry() + " " +
+						   theStudent.getFavouriteLanguage());
 		return "student-confirmation";
 		
 	}

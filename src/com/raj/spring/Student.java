@@ -1,5 +1,7 @@
 package com.raj.spring;
 
+import java.util.LinkedHashMap;
+
 public class Student {
 	
 	private String firstName;
@@ -7,7 +9,14 @@ public class Student {
 	private String country;
 	private String favouriteLanguage;
 	
+	private LinkedHashMap<String, String> favouriteLanguageOptions;
+
 	public Student(){
+		favouriteLanguageOptions = new LinkedHashMap<>();
+		favouriteLanguageOptions.put("Java", "Java");
+		favouriteLanguageOptions.put("JavaScript", "JavaScript");
+		favouriteLanguageOptions.put("C#", "C#");
+		favouriteLanguageOptions.put("C++", "C++");
 	}
 	
 	public String getFirstName(){
@@ -40,6 +49,10 @@ public class Student {
 
 	public void setFavouriteLanguage(String favouriteLanguage) {
 		this.favouriteLanguage = favouriteLanguage;
+	}
+	
+	public LinkedHashMap<String, String> getFavouriteLanguageOptions() {
+		return favouriteLanguageOptions;
 	}
 
 }
