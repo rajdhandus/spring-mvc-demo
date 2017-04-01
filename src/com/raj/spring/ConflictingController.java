@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class ConflictingController {
 	
-//	@RequestMapping("/showForm")
-//	public String displayForm(){
-//		return "someother-form";
-//	}
+	@RequestMapping("/showForm")
+	public String displayForm(){
+		return "someother-form";
+	}
 
 }
