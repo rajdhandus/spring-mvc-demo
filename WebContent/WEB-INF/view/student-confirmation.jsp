@@ -7,5 +7,7 @@
 The student is confirmed : ${student.firstName} ${student.lastName}
 <br/><br/>
 His country is : ${student.country}
+<br/><br/>
+Favourite Programming Language : ${student.favouriteLanguage}
 </body>
 </html>
