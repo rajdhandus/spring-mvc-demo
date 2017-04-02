@@ -22,6 +22,12 @@ Last Name:<form:input path="lastName"></form:input>
 		C++ <form:radiobutton path="favouriteLanguage" value="C++"></form:radiobutton> -->
 		<form:radiobuttons path="favouriteLanguage" items="${student.favouriteLanguageOptions}"/>
 		<br/><br/>
+		Operating Systems :
+		Linux <form:checkbox path="operatingSystems" value="Linux"/>
+		Mac OS <form:checkbox path="operatingSystems" value="Mac OS"/>
+		Ubuntu <form:checkbox path="operatingSystems" value="Ubuntu"/>
+		Windows <form:checkbox path="operatingSystems" value="Windows"/>
+		<br/><br/>
 		<input type="submit" value="SUBMIT" />
 		<br/><br/>
 	</form:form>

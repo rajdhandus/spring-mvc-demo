@@ -1,5 +1,6 @@
 package com.raj.spring;
 
+import java.util.Arrays;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -28,7 +29,8 @@ public class StudentController {
 		System.out.println(theStudent.getFirstName() + " " + 
 						   theStudent.getLastName() + " " + 
 						   theStudent.getCountry() + " " +
-						   theStudent.getFavouriteLanguage());
+						   theStudent.getFavouriteLanguage() + " " +
+						   Arrays.toString(theStudent.getOperatingSystems()));
 		return "student-confirmation";
 		
 	}
